@@ -1,0 +1,39 @@
+Mlxtend (machine learning extensions) is a Python library of useful tools for the day-to-day data science tasks. This library is created by Dr. Sebastian Raschka, an Assistant Professor of Statistics at the University of Wisconsin-Madison focusing on deep learning and machine learning research.
+
+
+
+TransactionEncoder - mlxtendhttp://rasbt.github.io › user_guide › preprocessing › Tr...
+A python list of lists, where the outer list stores the n transactions and the inner list stores the items in each transaction. ... Fit a TransactionEncoder .
+
+
+Apriori algorithm
+Apriori is an algorithm for frequent item set mining and association rule learning over relational databases. It proceeds by identifying the frequent individual items in the database and extending them to larger and larger item sets as long as those item sets appear sufficiently often in the database.
+
+The fillna() method replaces the NULL values with a specified value. The fillna() method returns a new DataFrame object unless the inplace parameter is set to True , in that case the fillna() method does the replacing in the original DataFrame instead
+
+
+How do you use encoding in Python?
+To achieve this, python in its language has defined “encode()” that encodes strings with the specified encoding scheme. There are several encoding schemes defined in the language. The Python String encode() method encodes the string, using the specified encoding. If no encoding is specified, UTF-8 will be used.
+
+
+The drop() function is used to drop specified labels from rows or columns. Remove rows or columns by specifying label names and corresponding axis, or by specifying directly index or column names. When using a multi-index, labels on different levels can be removed by specifying the level
+
+
+A lambda function is a small anonymous function. A lambda function can take any number of arguments, but can only have one expression.
+
+
+Pandas reset_index() is a method to reset index of a Data Frame. reset_index() method sets a list of integer ranging from 0 to length of data as index. Parameters: level: int, string or a list to select and remove passed column from index.
+
+
+What is leverage in Python?
+Leverage measures the difference of X and Y appearing together in the data set and what would be expected if X and Y where statistically dependent. The rational in a sales setting is to find out how many more units (items X and Y together) are sold than expected from the independent sells.
+
+What is conviction in Python?
+'conviction':
+
+A high conviction value means that the consequent is highly depending on the antecedent. For instance, in the case of a perfect confidence score, the denominator becomes 0 (due to 1 - 1) for which the conviction score is defined as 'inf'. Similar to lift, if items are independent, the conviction is 1.
+
+What is antecedent and consequent in association rule?
+Antecedent and Consequent
+
+The IF component of an association rule is known as the antecedent. The THEN component is known as the consequent. The antecedent and the consequent are disjoint; they have no items in common.

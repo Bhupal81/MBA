@@ -1,0 +1,177 @@
+
+****2- itemset****
+
+
+Total Transactions = 7501
+
+items	(cereals, mineral water)	193,1788
+counts	77
+
+support	: [(counts/total Trans)*100]
+  	   (77/7501) * 100 = 1.02
+
+confidence(x->y) : [(counts/item-1)*100]
+	            (77/193) * 100 = 39.89
+
+confidence(y->x) : [(counts/item-2)*100]
+	            (77/1788) * 100 = 4.30	max_confidence = 39.89
+
+
+
+
+
+items	(cooking oil, mineral water)	383,1788
+counts	151
+
+support	: [(counts/total Trans)*100]
+  	   (151/7501) * 100 = 2.013
+
+confidence(x->y) : [(counts/item-1)*100]
+	            (151/383) * 100 = 39.42
+
+confidence(y->x) : [(counts/item-2)*100]
+	            (151/1788) * 100 = 8.44	max_confidence = 39.42
+
+
+
+
+
+
+
+
+items	(milk, mineral water)	972,1788
+counts	360
+
+support	: [(counts/total Trans)*100]
+  	   (360/7501) * 100 = 4.79
+
+confidence(x->y) : [(counts/item-1)*100]
+	            (360/972) * 100 = 37.03
+
+confidence(y->x) : [(counts/item-2)*100]
+	            (360/1788) * 100 = 20.13	max_confidence = 37.03
+
+
+
+
+
+	itemset          		counts
+1(milk, mineral water)			360
+2(mineral water, ground beef)		307
+3(spaghetti, ground beef)		294
+4(frozen vegetables, mineral water)	268
+5(mineral water, pancakes)		253
+6(olive oil, mineral water)		207
+7(tomatoes, mineral water)		183	
+8(mineral water, soup)   		173	
+9(chicken, mineral water)		171
+1(cooking oil, mineral water)		151
+11(salmon, mineral water)	       	128
+12(red wine, mineral water)		82	
+13(cereals, mineral water)		77
+14(red wine, spaghetti)			77
+
+
+
+
+Total Transactions = 7501
+
+items	(ground beef, eggs, mineral water)	737,1348,1788
+counts	76
+
+support	: [(counts/total Trans)*100]
+  	   (76/7501) * 100 = 1.03
+
+x=737
+y=1348
+z=1788
+
+
+
+
+*******Lift***********
+
+support=0.026530, antecedent support=0.132116, consequent support	=0.174110
+lift=[ Support/ Support(x) * Support(y) ] /10
+	=[ 0.026530 /0.132116 * 0.174110 ]/10
+	=[ 0.026530 / 0.023003 ]/10
+	=[ 11.53328 ]/10
+	=1.153328   
+
+support=0.028530, antecedent support=0.132116, consequent support	=0.170911
+lift=[ Support/ Support(x) * Support(y) ] /10
+	=[ 0.028530/0.132116 * 0.170911 ]/10
+	=[ 0.028530/ 0.022580 ]/10
+	=[ 12.635075 ]/10
+	=1.2635075 
+
+support=0.026530, antecedent support=0.174110, consequent support	=0.132116
+lift=[ Support/ Support(x) * Support(y) ] /10
+	=[ 0.026530 /0.174110 * 0.132116 ]/10
+	=[ 0.026530 / 0.023003 ]/10
+	=[ 11.53328 ]/10
+	=1.153328   
+
+
+
+
+******Leverage*******
+Leverage = L(x->y)= p(x and y) - [p(x) p(y)]
+			=0.0200807 - [0.132116 * 0.174110]
+			=0.003527
+
+******Conviction*******
+Conviction(x->y) = [1-support(y)] / [1-confidence(x->y)]
+			=[1-0.174110] / [1-0.200807]
+			=0.82589 / 0.799193
+			=1.0333404
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+confidence(xy->z) : [(counts/item-1)*100]
+	            (76/737) * 100 = 10.31   //3873
+
+confidence(yz->x) : [(counts/item-2)*100]
+	            (76/1348) * 100 = 5.63	max_confidence = 39.89
+
+confidence(zx->y) : [(counts/item-2)*100]
+	            (76/1788) * 100 = 4.25	max_confidence = 39.89
+
+tomato 513   8/513  8/319
+salmon 319    
+chocolate 1230    
+
+
+
+
+Lift (A => B) = 1 means that there is no correlation within the itemset.
+Lift (A => B) > 1 means that there is a positive correlation within the itemset, i.e., products in the itemset, A, and B, are more likely to be bought together.
+Lift (A => B) < 1 means that there is a negative correlation within the itemset, i.e., products in itemset, A, and B, are unlikely to be bought together.
+
+
+
